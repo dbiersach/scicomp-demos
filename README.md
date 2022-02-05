@@ -1,2 +1,2 @@
-# scicomp-demos
-Scientific Computing Demonstrations
+# Scientific Computing Demonstrations
+## Using Arduino and Python
