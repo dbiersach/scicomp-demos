@@ -37,4 +37,5 @@ sudo apt install -y libsqlite3-dev
 sudo apt install -y wget
 sudo apt install -y libbz2-dev
 sudo apt install -y gnome-keyring
+sudo apt install -y thunar
 sudo updatedb

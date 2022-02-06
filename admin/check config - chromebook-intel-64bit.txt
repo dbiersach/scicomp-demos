@@ -1,0 +1,184 @@
+cat /etc/os-release
+    RETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+    NAME="Debian GNU/Linux"
+    VERSION_ID="11"
+    VERSION="11 (bullseye)"
+    VERSION_CODENAME=bullseye
+    ID=debian
+    HOME_URL="https://www.debian.org/"
+    SUPPORT_URL="https://www.debian.org/support"
+    BUG_REPORT_URL="https://bugs.debian.org/"
+
+cat /etc/debian_version
+    11.2
+
+dpkg --print-architecture
+    amd64
+
+uname -a
+    Linux penguin 5.4.157-17191-g6575d22de694 #1 SMP PREEMPT Wed Jan 19 19:36:35 PST 2022 x86_64 GNU/Linux
+
+free -m
+               total        used        free      shared  buff/cache   available
+Mem:            2777           5        2769           0           3        2772
+Swap:              0           0           0
+
+
+df -h
+    df: /run/user/1000/doc: Operation not permitted
+    Filesystem      Size  Used Avail Use% Mounted on
+    /dev/vdb         12G  8.2G  3.4G  72% /
+    none            492K     0  492K   0% /dev
+    devtmpfs        1.4G     0  1.4G   0% /dev/tty
+    /dev/vdb         12G  8.2G  3.4G  72% /dev/wl0
+    tmpfs           100K     0  100K   0% /dev/lxd
+    tmpfs           100K     0  100K   0% /dev/.lxd-mounts
+    run             1.4G   28K  1.4G   1% /dev/.host_ip
+    /dev/root       422M  290M  124M  71% /dev/.ssh/sshd_config
+    9p              1.9G  772K  1.9G   1% /mnt/chromeos
+    tmpfs           1.4G     0  1.4G   0% /mnt/external
+    /dev/vda         52M   52M     0 100% /opt/google/cros-containers
+    tmpfs           1.4G   15M  1.4G   2% /dev/shm
+    tmpfs           556M  184K  556M   1% /run
+    tmpfs           5.0M     0  5.0M   0% /run/lock
+    tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+    tmpfs           278M   48K  278M   1% /run/user/1000
+
+lscpu
+    Architecture:                    x86_64
+    CPU op-mode(s):                  32-bit, 64-bit
+    Byte Order:                      Little Endian
+    Address sizes:                   39 bits physical, 48 bits virtual
+    CPU(s):                          2
+    On-line CPU(s) list:             0,1
+    Thread(s) per core:              1
+    Core(s) per socket:              2
+    Socket(s):                       1
+    Vendor ID:                       GenuineIntel
+    CPU family:                      6
+    Model:                           122
+    Model name:                      06/7a
+    Stepping:                        8
+    CPU MHz:                         1094.400
+    BogoMIPS:                        2188.80
+    Hypervisor vendor:               KVM
+    Virtualization type:             full
+    L1d cache:                       48 KiB
+    L1i cache:                       64 KiB
+    L2 cache:                        4 MiB
+    Vulnerability Itlb multihit:     Not affected
+    Vulnerability L1tf:              Not affected
+    Vulnerability Mds:               Not affected
+    Vulnerability Meltdown:          Not affected
+    Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled vi
+                                    a prctl and seccomp
+    Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user 
+                                    pointer sanitization
+    Vulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB
+                                    filling
+    Vulnerability Srbds:             Not affected
+    Vulnerability Tsx async abort:   Not affected
+    Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr
+                                    pge mca cmov pat pse36 clflush mmx fxsr sse sse
+                                    2 ss ht syscall nx pdpe1gb rdtscp lm constant_ts
+                                    c arch_perfmon rep_good nopl xtopology nonstop_t
+                                    sc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16
+                                    sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_
+                                    timer aes xsave rdrand hypervisor lahf_lm 3dnowp
+                                    refetch cpuid_fault ssbd ibrs ibpb stibp ibrs_en
+                                    hanced fsgsbase tsc_adjust smep erms mpx rdseed 
+                                    smap clflushopt sha_ni xsaveopt xsavec xgetbv1 x
+                                    saves arat md_clear arch_capabilities
+
+glxinfo -B
+    name of display: :0
+    display: :0  screen: 0
+    direct rendering: Yes
+    Extended renderer info (GLX_MESA_query_renderer):
+        Vendor: Mesa/X.org (0x1af4)
+        Device: virgl (0x1010)
+        Version: 20.3.5
+        Accelerated: yes
+        Video memory: 0MB
+        Unified memory: no
+        Preferred profile: core (0x1)
+        Max core profile version: 4.3
+        Max compat profile version: 3.1
+        Max GLES1 profile version: 1.1
+        Max GLES[23] profile version: 3.2
+    OpenGL vendor string: Mesa/X.org
+    OpenGL renderer string: virgl
+    OpenGL core profile version string: 4.3 (Core Profile) Mesa 20.3.5
+    OpenGL core profile shading language version string: 4.30
+    OpenGL core profile context flags: (none)
+    OpenGL core profile profile mask: core profile
+
+    OpenGL version string: 3.1 Mesa 20.3.5
+    OpenGL shading language version string: 1.40
+    OpenGL context flags: (none)
+
+    OpenGL ES profile version string: OpenGL ES 3.2 Mesa 20.3.5
+    OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20
+
+lsusb && lsusb -t
+    Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+    Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+    /:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/8p, 5000M
+    /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/8p, 480M
+
+ls /dev/*
+    /dev/console  /dev/fuse     /dev/null    /dev/stderr  /dev/tty      /dev/zero
+    /dev/core     /dev/initctl  /dev/ptmx    /dev/stdin   /dev/urandom
+    /dev/full     /dev/log      /dev/random  /dev/stdout  /dev/wl0
+
+    /dev/bus:
+    usb
+
+    /dev/dri:
+    card0  renderD128
+
+    /dev/fd:
+    0  1  2  27  3
+
+    /dev/lxd:
+    sock
+
+    /dev/mqueue:
+
+    /dev/net:
+    tun
+
+    /dev/pts:
+    0  ptmx
+
+    /dev/shm:
+
+    /dev/snd:
+    controlC0  pcmC0D0c  pcmC0D0p  pcmC0D1c  seq  timer
+
+
+dmesg | grep tty
+    [    1.181912] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a U6_16550A
+    [    1.222183] serial8250: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a U6_16550A
+    [    1.262014] serial8250: ttyS2 at I/O 0x3e8 (irq = 4, base_baud = 115200) is a U6_16550A
+    [    1.301805] serial8250: ttyS3 at I/O 0x2e8 (irq = 3, base_baud = 115200) is a U6_16550A
+
+
+dmesg | awk '/tty/ && /USB/ {print "/dev/"$10}'|tail -1
+
+
+which python3
+    /home/dbiersach/miniconda3/envs/scicomp-demos/bin/python3
+	
+
+python3 --version
+    Python 3.9.10
+
+
+which python3.9
+    /home/dbiersach/miniconda3/envs/scicomp-demos/bin/python3.9
+
+
+python3.9 --version
+    Python 3.9.10
+
