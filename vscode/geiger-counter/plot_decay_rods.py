@@ -44,7 +44,7 @@ def plot(ax, file_path, file_name):
 
     a, b, c, score = fit_quadratic(vec_x, vec_y)
     ax.plot(
-        x, a * x ** 2 + b * x + c, color="blue", label=f"Quadratic ($R^2$={score:.4f})"
+        x, a * x**2 + b * x + c, color="blue", label=f"Quadratic ($R^2$={score:.4f})"
     )
 
     ax.scatter(vec_x, vec_y, color="red")

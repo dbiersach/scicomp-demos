@@ -114,7 +114,7 @@ def main():
 
     plot(ax, sample_name)
 
-    fig.canvas.manager.set_window_title("Master Teacher PLT")
+    fig.canvas.manager.set_window_title("SciComp Demonstrations")
     plt.show()
 
 
