@@ -1,2 +1,2 @@
 # Scientific Computing Demonstrations
-## Using Arduino and Python
+## Experiments in Scientific Computing using Python and the Arduino Platform
