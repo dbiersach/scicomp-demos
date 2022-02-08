@@ -9,6 +9,6 @@ cd arduino-1.8.19
 sudo ./install.sh
 cd $HOME
 rm arduino-ide.tar.xz
-wget -O miniconda3-installer.sh 'https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh'
-bash ./miniconda3-installer.sh
-rm miniconda3-installer.sh
+wget -O miniforge3-installer.sh 'https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh'
+bash ./miniforge3-installer.sh
+rm miniforge3-installer.sh
