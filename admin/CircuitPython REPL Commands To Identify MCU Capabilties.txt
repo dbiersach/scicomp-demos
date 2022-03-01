@@ -1,0 +1,53 @@
+import board;print(board.board_id);dir(board)
+
+Example Output:
+	adafruit_kb2040
+	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'BUTTON', 'CLK', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART', 'board_id']
+
+
+==========================================
+Contents of "boot_out.txt" file:
+	Adafruit CircuitPython 7.2.0 on 2022-02-24; Adafruit KB2040 with rp2040
+	Board ID:adafruit_kb2040
+
+==========================================
+To use VSCode and CircuitPython Extension for Adafruit's KB2040 board:
+
+1.) Install Visual Studio Code - CircuitPython Extension
+2.) Inspect file "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.15\boards\metadata.json"
+	to JSON record with Vendor ID: 0x2939A (should be Adafruit) and Product ID: 0x8106
+		  {
+			"vid": "0x239A",
+			"pid": "0x8106",
+			"product": "QT2040 Trinkey",
+			"manufacturer": "Adafruit",
+			"site_path": "adafruit_qt2040_trinkey"
+		  }
+3.) Goto folder "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.15\boards\0x239A\0x8106"
+	Inspect file "board.pyi" in this folder
+	The KB2040 appears to have same types of features as "Adafruit Trinkey QT2040 - RP2040 USB Key with Stemma QT"
+		See this page for more about the QT2040: https://www.adafruit.com/product/5056
+4.) Open CIRCUITPY drive (H:?) folder in VSCode and select "Adafruit Trinkey QT2040" board type
+	Then save workspace file - which will having these entries:
+			{
+				"folders": [
+					{
+						"path": "."
+					}
+				],
+				"settings": {
+					"python.languageServer": "Pylance",
+					"python.linting.pylintEnabled": false,
+					"python.analysis.diagnosticSeverityOverrides": {
+						"reportMissingModuleSource": "none"
+					},
+					"python.analysis.extraPaths": [
+						"c:\\Users\\dbier\\.vscode\\extensions\\joedevivo.vscode-circuitpython-0.1.15\\boards\\0x239A\\0x8106",
+						"c:\\Users\\dbier\\.vscode\\extensions\\joedevivo.vscode-circuitpython-0.1.15\\stubs",
+						"c:\\Users\\dbier\\AppData\\Roaming\\Code\\User\\globalStorage\\joedevivo.vscode-circuitpython\\bundle\\20220225\\adafruit-circuitpython-bundle-py-20220225\\lib"
+					],
+					"circuitpython.board.version": "7.2.0",
+					"circuitpython.board.pid": "0x8106",
+					"circuitpython.board.vid": "0x239A"
+				}
+}
