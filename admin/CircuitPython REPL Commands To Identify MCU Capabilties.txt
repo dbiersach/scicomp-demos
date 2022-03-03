@@ -14,8 +14,8 @@ Contents of "boot_out.txt" file:
 To use VSCode and CircuitPython Extension for Adafruit's KB2040 board:
 
 1.) Install Visual Studio Code - CircuitPython Extension
-2.) Inspect file "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.15\boards\metadata.json"
-	to JSON record with Vendor ID: 0x2939A (should be Adafruit) and Product ID: 0x8106
+2.) Open the file "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.15\boards\metadata.json"
+	Locate the JSON record with Vendor ID: 0x2939A (should be Adafruit) and Product ID: 0x8106
 		  {
 			"vid": "0x239A",
 			"pid": "0x8106",
@@ -23,8 +23,7 @@ To use VSCode and CircuitPython Extension for Adafruit's KB2040 board:
 			"manufacturer": "Adafruit",
 			"site_path": "adafruit_qt2040_trinkey"
 		  }
-3.) Goto folder "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.15\boards\0x239A\0x8106"
-	Inspect file "board.pyi" in this folder
+3.) Open the file "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.15\boards\0x239A\0x8106\board.pyi"
 	The KB2040 appears to have same types of features as "Adafruit Trinkey QT2040 - RP2040 USB Key with Stemma QT"
 		See this page for more about the QT2040: https://www.adafruit.com/product/5056
 4.) Open CIRCUITPY drive (H:?) folder in VSCode and select "Adafruit Trinkey QT2040" board type
