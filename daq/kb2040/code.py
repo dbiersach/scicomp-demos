@@ -27,12 +27,15 @@ def run_geiger_counter():
     sys.stdout.write(f"{pin_signal.count}\n")
     pin_signal.deinit()
     pixel_builtin.fill((0, 0, 0))
+    time.sleep(0.1)
 
 
 while True:
+    time.sleep(0.1)
     if supervisor.runtime.serial_bytes_available:
         cmd = sys.stdin.readline().strip()
 
         if cmd == "run_geiger_counter":
             run_geiger_counter()
+
 
