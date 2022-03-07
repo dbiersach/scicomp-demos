@@ -6,8 +6,8 @@ class Block:
         self.y = y
 
     def move(self, delta_x, delta_y):
-        self.x += delta_x
-        self.y += delta_y
+        self.x = self.x + delta_x
+        self.y = self.y + delta_y
 
 
 class BlockList:
