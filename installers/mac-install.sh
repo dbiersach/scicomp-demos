@@ -10,6 +10,7 @@ conda install -y numexpr h5py traitsui zipp pathspec openpyxl
 conda install -y pylint autopep8 black
 conda install -y websockets requests pyserial
 conda install -y ipython ipykernel ipympl
+conda install -y nodejs
 conda install -y jupyterlab jupyterlab_code_formatter
 conda install -y numba
 conda update -y --all
