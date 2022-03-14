@@ -1,9 +1,0 @@
-{
-    "cSpell.words": [
-        "genfromtxt",
-        "intitial",
-        "savetxt"
-    ],
-    "editor.formatOnSave": true,
-    "python.formatting.provider": "black"
-}
