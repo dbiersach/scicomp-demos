@@ -1,8 +1,13 @@
 import board;print(board.board_id);dir(board)
+import board,microcontroller;print(board.board_id);dir(microcontroller.pin)
 
 Example Output:
 	adafruit_kb2040
 	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'BUTTON', 'CLK', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART', 'board_id']
+	sparkfun_pro_micro_rp2040
+	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'D0', 'D1', 'D2', 'D20', 'D21', 'D22', 'D23', 'D26', 'D27', 'D28', 'D29', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART', 'board_id']	
+	['__class__', 'GPIO0', 'GPIO1', 'GPIO10', 'GPIO11', 'GPIO12', 'GPIO13', 'GPIO14', 'GPIO15', 'GPIO16', 'GPIO17', 'GPIO18', 'GPIO19', 'GPIO2', 'GPIO20', 'GPIO21', 'GPIO22', 'GPIO23', 'GPIO24', 'GPIO25', 'GPIO26', 'GPIO27', 'GPIO28', 'GPIO29', 'GPIO3', 'GPIO4', 'GPIO5', 'GPIO6', 'GPIO7', 'GPIO8', 'GPIO9']
+	
 
 
 ==========================================
@@ -50,3 +55,21 @@ To use VSCode and CircuitPython Extension for Adafruit's KB2040 board:
 					"circuitpython.board.vid": "0x239A"
 				}
 }
+
+
+
+==========================================
+import microcontroller
+import board
+
+board_pins = []
+for pin in dir(microcontroller.pin):
+    if isinstance(getattr(microcontroller.pin, pin), microcontroller.Pin):
+        pins = []
+        for alias in dir(board):
+            if getattr(board, alias) is getattr(microcontroller.pin, pin):
+                pins.append("board.{}".format(alias))
+        if len(pins) > 0:
+            board_pins.append(" ".join(pins))
+for pins in sorted(board_pins):
+    print(pins)
