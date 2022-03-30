@@ -1,0 +1,6 @@
+conda update -n base conda -y
+conda activate "environment"
+conda update -y --all
+pip install --upgrade pygame
+pip install --upgrade 'qiskit[all]'
+pip install 'qiskit[visualization]'

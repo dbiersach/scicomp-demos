@@ -1,12 +1,34 @@
+help('modules')
+
 import board;print(board.board_id);dir(board)
 import board,microcontroller;print(board.board_id);dir(microcontroller.pin)
+import sys;sys.path
+import os;print(os.uname());print(os.statvfs('/'))
+import micropython;micropython.mem_info()
 
 Example Output:
 	adafruit_kb2040
-	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'BUTTON', 'CLK', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART', 'board_id']
+	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'BUTTON', 'CLK', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART']
+	
 	sparkfun_pro_micro_rp2040
-	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'D0', 'D1', 'D2', 'D20', 'D21', 'D22', 'D23', 'D26', 'D27', 'D28', 'D29', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART', 'board_id']	
+	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'D0', 'D1', 'D2', 'D20', 'D21', 'D22', 'D23', 'D26', 'D27', 'D28', 'D29', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART']
+	['__class__', 'GPIO0', 'GPIO1', 'GPIO10', 'GPIO11', 'GPIO12', 'GPIO13', 'GPIO14', 'GPIO15', 'GPIO16', 'GPIO17', 'GPIO18', 'GPIO19', 'GPIO2', 'GPIO20', 'GPIO21', 'GPIO22', 'GPIO23', 'GPIO24', 'GPIO25', 'GPIO26', 'GPIO27', 'GPIO28', 'GPIO29', 'GPIO3', 'GPIO4', 'GPIO5', 'GPIO6', 'GPIO7', 'GPIO8', 'GPIO9']	
+	
+	sparkfun_thing_plus_rp2040
+	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'D0', 'D1', 'D16', 'D17', 'D18', 'D19', 'D2', 'D20', 'D21', 'D22', 'D23', 'D26', 'D27', 'D28', 'D29', 'D3', 'D4', 'D6', 'D7', 'I2C', 'LED', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SD_CS', 'SD_MISO', 'SD_MOSI', 'SD_SCK', 'SPI', 'STEMMA_I2C', 'TX', 'UART']
 	['__class__', 'GPIO0', 'GPIO1', 'GPIO10', 'GPIO11', 'GPIO12', 'GPIO13', 'GPIO14', 'GPIO15', 'GPIO16', 'GPIO17', 'GPIO18', 'GPIO19', 'GPIO2', 'GPIO20', 'GPIO21', 'GPIO22', 'GPIO23', 'GPIO24', 'GPIO25', 'GPIO26', 'GPIO27', 'GPIO28', 'GPIO29', 'GPIO3', 'GPIO4', 'GPIO5', 'GPIO6', 'GPIO7', 'GPIO8', 'GPIO9']
+
+
+	metro_m4_express
+	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'A4', 'A5', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'LED', 'LED_RX', 'LED_TX', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'TX', 'UART', 'board_id']
+	['__class__', 'PA00', 'PA01', 'PA02', 'PA03', 'PA04', 'PA05', 'PA06', 'PA07', 'PA08', 'PA09', 'PA10', 'PA11', 'PA12', 'PA13', 'PA14', 'PA15', 'PA16', 'PA17', 'PA18', 'PA19', 'PA20', 'PA21', 'PA22', 'PA23', 'PA27', 'PA30', 'PA31', 'PB00', 'PB01', 'PB02', 'PB03', 'PB04', 'PB05', 'PB06', 'PB07', 'PB08', 'PB09', 'PB10', 'PB11', 'PB12', 'PB13', 'PB14', 'PB15', 'PB16', 'PB17', 'PB22', 'PB23', 'PB30', 'PB31']
+	['', '/', '.frozen', '/lib']	
+	(1024, 1024, 2024, 1064, 1064, 0, 0, 0, 0, 255)
+
+	
+	
+
+
 	
 
 
