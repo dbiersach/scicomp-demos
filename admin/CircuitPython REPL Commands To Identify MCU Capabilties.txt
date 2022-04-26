@@ -18,17 +18,30 @@ Example Output:
 	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'D0', 'D1', 'D16', 'D17', 'D18', 'D19', 'D2', 'D20', 'D21', 'D22', 'D23', 'D26', 'D27', 'D28', 'D29', 'D3', 'D4', 'D6', 'D7', 'I2C', 'LED', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SD_CS', 'SD_MISO', 'SD_MOSI', 'SD_SCK', 'SPI', 'STEMMA_I2C', 'TX', 'UART']
 	['__class__', 'GPIO0', 'GPIO1', 'GPIO10', 'GPIO11', 'GPIO12', 'GPIO13', 'GPIO14', 'GPIO15', 'GPIO16', 'GPIO17', 'GPIO18', 'GPIO19', 'GPIO2', 'GPIO20', 'GPIO21', 'GPIO22', 'GPIO23', 'GPIO24', 'GPIO25', 'GPIO26', 'GPIO27', 'GPIO28', 'GPIO29', 'GPIO3', 'GPIO4', 'GPIO5', 'GPIO6', 'GPIO7', 'GPIO8', 'GPIO9']
 
-
 	metro_m4_express
 	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'A4', 'A5', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'LED', 'LED_RX', 'LED_TX', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'TX', 'UART', 'board_id']
 	['__class__', 'PA00', 'PA01', 'PA02', 'PA03', 'PA04', 'PA05', 'PA06', 'PA07', 'PA08', 'PA09', 'PA10', 'PA11', 'PA12', 'PA13', 'PA14', 'PA15', 'PA16', 'PA17', 'PA18', 'PA19', 'PA20', 'PA21', 'PA22', 'PA23', 'PA27', 'PA30', 'PA31', 'PB00', 'PB01', 'PB02', 'PB03', 'PB04', 'PB05', 'PB06', 'PB07', 'PB08', 'PB09', 'PB10', 'PB11', 'PB12', 'PB13', 'PB14', 'PB15', 'PB16', 'PB17', 'PB22', 'PB23', 'PB30', 'PB31']
 	['', '/', '.frozen', '/lib']	
 	(1024, 1024, 2024, 1064, 1064, 0, 0, 0, 0, 255)
 
-	
-	
+	feather_m4_express	
+	['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'A4', 'A5', 'BATTERY', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D23', 'D24', 'D25', 'D4', 'D5', 'D6', 'D9', 'I2C', 'LED', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'TX', 'UART', 'VOLTAGE_MONITOR']
+	['__class__', 'PA00', 'PA01', 'PA02', 'PA03', 'PA04', 'PA05', 'PA06', 'PA07', 'PA08', 'PA09', 'PA10', 'PA11', 'PA12', 'PA13', 'PA14', 'PA15', 'PA16', 'PA17', 'PA18', 'PA19', 'PA20', 'PA21', 'PA22', 'PA23', 'PA27', 'PA30', 'PA31', 'PB00', 'PB01', 'PB02', 'PB03', 'PB04', 'PB05', 'PB06', 'PB07', 'PB08', 'PB09', 'PB10', 'PB11', 'PB12', 'PB13', 'PB14', 'PB15', 'PB16', 'PB17', 'PB22', 'PB23', 'PB30', 'PB31']
+	['', '/', '.frozen', '/lib']
+	(sysname='samd51', nodename='samd51', release='7.2.5', version='7.2.5 on 2022-04-06', machine='Adafruit Feather M4 Express with samd51j19')
+	(1024, 1024, 2024, 2019, 2019, 0, 0, 0, 0, 255)
 
 
+	teensy40
+	['__class__', '__name__', 'A0', 'A1', 'A10', 'A11', 'A12', 'A13', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'CLK', 'CMD', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D14', 'D15', 'D16', 'D17', 'D18', 'D19', 'D2', 'D20', 'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28', 'D29', 'D3', 'D30', 'D31', 'D32', 'D33', 'D34', 'D35', 'D36', 'D37', 'D38', 'D39', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'DAT0', 'DAT1', 'DAT2', 'DAT3', 'I2C', 'LED', 'MISO', 'MOSI', 'RX', 'RX1', 'SCK', 'SCL', 'SCL0', 'SDA', 'SDA0', 'SPI', 'TX', 'TX1', 'UART']
+	['__class__', 'GPIO_AD_B0_00', 'GPIO_AD_B0_01', 'GPIO_AD_B0_02', 'GPIO_AD_B0_03', 'GPIO_AD_B0_04', 'GPIO_AD_B0_05', 'GPIO_AD_B0_06', 'GPIO_AD_B0_07', 'GPIO_AD_B0_08', 'GPIO_AD_B0_09', 'GPIO_AD_B0_10', 'GPIO_AD_B0_11', 'GPIO_AD_B0_12', 'GPIO_AD_B0_13', 'GPIO_AD_B0_14', 'GPIO_AD_B0_15', 'GPIO_AD_B1_00', 'GPIO_AD_B1_01', 'GPIO_AD_B1_02', 'GPIO_AD_B1_03', 'GPIO_AD_B1_04', 'GPIO_AD_B1_05', 'GPIO_AD_B1_06', 'GPIO_AD_B1_07', 'GPIO_AD_B1_08', 'GPIO_AD_B1_09', 'GPIO_AD_B1_10', 'GPIO_AD_B1_11', 'GPIO_AD_B1_12', 'GPIO_AD_B1_13', 'GPIO_AD_B1_14', 'GPIO_AD_B1_15', 'GPIO_B0_00', 'GPIO_B0_01', 'GPIO_B0_02', 'GPIO_B0_03', 'GPIO_B0_04', 'GPIO_B0_05', 'GPIO_B0_06', 'GPIO_B0_07', 'GPIO_B0_08', 'GPIO_B0_09', 'GPIO_B0_10', 'GPIO_B0_11', 'GPIO_B0_12', 'GPIO_B0_13', 'GPIO_B0_14', 'GPIO_B0_15', 'GPIO_B1_00', 'GPIO_B1_01', 'GPIO_B1_02', 'GPIO_B1_03', 'GPIO_B1_04', 'GPIO_B1_05', 'GPIO_B1_06', 'GPIO_B1_07', 'GPIO_B1_08', 'GPIO_B1_09', 'GPIO_B1_10', 'GPIO_B1_11', 'GPIO_B1_12', 'GPIO_B1_13', 'GPIO_B1_14', 'GPIO_B1_15', 'GPIO_EMC_00', 'GPIO_EMC_01', 'GPIO_EMC_02', 'GPIO_EMC_03', 'GPIO_EMC_04', 'GPIO_EMC_05', 'GPIO_EMC_06', 'GPIO_EMC_07', 'GPIO_EMC_08', 'GPIO_EMC_09', 'GPIO_EMC_10', 'GPIO_EMC_11', 'GPIO_EMC_12', 'GPIO_EMC_13', 'GPIO_EMC_14', 'GPIO_EMC_15', 'GPIO_EMC_16', 'GPIO_EMC_17', 'GPIO_EMC_18', 'GPIO_EMC_19', 'GPIO_EMC_20', 'GPIO_EMC_21', 'GPIO_EMC_22', 'GPIO_EMC_23', 'GPIO_EMC_24', 'GPIO_EMC_25', 'GPIO_EMC_26', 'GPIO_EMC_27', 'GPIO_EMC_28', 'GPIO_EMC_29', 'GPIO_EMC_30', 'GPIO_EMC_31', 'GPIO_EMC_32', 'GPIO_EMC_33', 'GPIO_EMC_34', 'GPIO_EMC_35', 'GPIO_EMC_36', 'GPIO_EMC_37', 'GPIO_EMC_38', 'GPIO_EMC_39', 'GPIO_EMC_40', 'GPIO_EMC_41', 'GPIO_SD_B0_00', 'GPIO_SD_B0_01', 'GPIO_SD_B0_02', 'GPIO_SD_B0_03', 'GPIO_SD_B0_04', 'GPIO_SD_B0_05', 'GPIO_SD_B1_00', 'GPIO_SD_B1_01', 'GPIO_SD_B1_02', 'GPIO_SD_B1_03', 'GPIO_SD_B1_04', 'GPIO_SD_B1_05', 'GPIO_SD_B1_06', 'GPIO_SD_B1_07', 'GPIO_SD_B1_08', 'GPIO_SD_B1_09', 'GPIO_SD_B1_10', 'GPIO_SD_B1_11']
+	['', '/', '.frozen', '/lib']
+	(sysname='mimxrt10xx', nodename='mimxrt10xx', release='7.2.5', version='7.2.5 on 2022-04-06', machine='Teensy 4.0 with IMXRT1062DVJ6A')
+	(512, 512, 2001, 1994, 1994, 0, 0, 0, 0, 255)
+	
+
+	
+	
 	
 
 
@@ -41,7 +54,7 @@ Contents of "boot_out.txt" file:
 To use VSCode and CircuitPython Extension for Adafruit's KB2040 board:
 
 1.) Install Visual Studio Code - CircuitPython Extension
-2.) Open the file "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.15\boards\metadata.json"
+2.) Open the file "C:\Users\dbier\.vscode\extensions\joedevivo.vscode-circuitpython-0.1.17-win32-x64\boards\metadata.json"
 	Locate the JSON record with Vendor ID: 0x2939A (should be Adafruit) and Product ID: 0x8106
 		  {
 			"vid": "0x239A",
