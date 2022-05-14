@@ -4,3 +4,5 @@ conda update -y --all
 pip install --upgrade pygame
 pip install --upgrade 'qiskit[all]'
 pip install 'qiskit[visualization]'
+
+conda remove --name venv --all
