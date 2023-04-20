@@ -1,0 +1,58 @@
+################################################################################################
+import board;print(board.board_id);dir(board)
+
+adafruit_kb2040
+['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'BUTTON', 'CLK', 'D0', 'D1', 'D10', 'D11', 'D12', 'D13', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL', 'RX', 'SCK', 'SCL', 'SDA', 'SPI', 'STEMMA_I2C', 'TX', 'UART', 'board_id']
+
+################################################################################################
+import board,microcontroller;print(board.board_id);dir(microcontroller.pin)
+
+adafruit_kb2040
+['__class__', 'GPIO0', 'GPIO1', 'GPIO10', 'GPIO11', 'GPIO12', 'GPIO13', 'GPIO14', 'GPIO15', 'GPIO16', 'GPIO17', 'GPIO18', 'GPIO19', 'GPIO2', 'GPIO20', 'GPIO21', 'GPIO22', 'GPIO23', 'GPIO24', 'GPIO25', 'GPIO26', 'GPIO27', 'GPIO28', 'GPIO29', 'GPIO3', 'GPIO4', 'GPIO5', 'GPIO6', 'GPIO7', 'GPIO8', 'GPIO9']
+
+################################################################################################
+import gc;gc.collect();gc.mem_free()
+
+207488
+
+################################################################################################
+import sys;sys.path
+
+['', '/', '/lib']
+
+################################################################################################
+import os;print(os.uname());fs_stat = os.statvfs('/')
+print("Disk size in MB", fs_stat[0] * fs_stat[2] / 1024 / 1024)
+print("Free space in MB", fs_stat[0] * fs_stat[3] / 1024 / 1024)
+
+(sysname='rp2040', nodename='rp2040', release='7.3.2', version='7.3.2 on 2022-07-20', machine='Adafruit KB2040 with rp2040')
+Disk size in MB 6.96973
+Free space in MB 6.90527
+
+################################################################################################
+help('modules')
+
+__future__        digitalio         os                touchio
+__main__          displayio         paralleldisplay   traceback
+_asyncio          dualbank          ps2io             ulab
+adafruit_bus_device                 errno             pulseio           ulab
+adafruit_bus_device.i2c_device      espidf            pwmio             ulab.fft
+adafruit_bus_device.spi_device      fontio            qrio              ulab.linalg
+adafruit_pixelbuf framebufferio     rainbowio         ulab.numpy
+aesio             frequencyio       random            ulab.scipy
+alarm             gc                re                ulab.scipy.linalg
+analogio          getpass           rgbmatrix         ulab.scipy.optimize
+array             gifio             rotaryio          ulab.scipy.signal
+atexit            i2cperipheral     rtc               ulab.scipy.special
+audiobusio        imagecapture      sdcardio          ulab.utils
+audiocore         io                select            usb_cdc
+audiomixer        ipaddress         sharpdisplay      usb_hid
+binascii          json              socketpool        usb_midi
+bitbangio         keypad            ssl               uselect
+bitmaptools       math              storage           vectorio
+board             mdns              struct            watchdog
+builtins          microcontroller   supervisor        wifi
+busio             micropython       synthio           zlib
+canio             msgpack           sys
+collections       neopixel_write    terminalio
+countio           onewireio         time
