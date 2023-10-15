@@ -28,7 +28,7 @@ def usb_writeline(x):
 num_samples = 1000  # for seperate charge and discharge periods
 params = f"{num_samples}"
 usb_writeline(params)
-print("RC Decay experiment is running...")
+print("RC Circuit experiment is running...")
 
 # Read from MCU the number of samples
 n = int(usb_readline())
