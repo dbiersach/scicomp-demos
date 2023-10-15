@@ -1,0 +1,37 @@
+https://thonny.org
+https://github.com/thonny/thonny/releases
+
+For Windows PC:	
+	https://github.com/thonny/thonny/releases/download/v4.1.1/thonny-4.1.1.exe
+
+For Mac OS:	
+	https://github.com/thonny/thonny/releases/download/v4.1.1/thonny-4.1.1.pkg
+	
+For Chromebook Linux:
+	sudo apt install -y thonny	
+	
+Websites You Must Be Able To Access:
+	https://pypi.org
+	https://files.pythonhosted.org
+	https://github.com/dbiersach/scicomp101
+
+
+Required Packages to install into Thonny:
+	NumPy
+	Matplotlib
+	Black
+	PyQt6 
+	Numba
+	SciPy
+	SymPy
+	Pygame
+	SciKit-Learn
+
+Required Plug-in to install into Thonny:
+	thonny-black-formatter
+
+Uninstall Thonny & then Delete These Windows Folders:
+	C:\Users\dbier\AppData\Roaming\Thonny
+	C:\Users\dbier\AppData\Roaming\Python
+	C:\Users\dbier\AppData\Local\thonny-dbier
+	C:\Users\dbier\AppData\Local\Programs\Thonny
