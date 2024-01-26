@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "circuitpython-Color-Picker"
+description = "Colopicker en CircuitPython for TFT displays"
+version = "0.0.0+auto.0"
+readme = "README.rst"
+authors = [
+    {name = "Jose D. Montoya", email = "colorpicker@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/CircuitPython_color_picker.git"}
+keywords = [
+    "hardware",
+    "micropython",
+    "circuitpython",
+    "graphic",
+    "wheel",
+    "widget",
+    "displayio",
+    "color",
+    "widget",
+    "themes"
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+py-modules = ["CircuitPython_Color_Picker"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {optional = {file = ["optional_requirements.txt"]}}

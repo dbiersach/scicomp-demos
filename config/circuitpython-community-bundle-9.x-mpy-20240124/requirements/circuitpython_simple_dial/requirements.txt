@@ -1,0 +1,5 @@
+# SPDX-FileCopyrightText: Copyright (c) 2021 Tim C for circuitpython
+#
+# SPDX-License-Identifier: MIT
+
+Adafruit-Blinka

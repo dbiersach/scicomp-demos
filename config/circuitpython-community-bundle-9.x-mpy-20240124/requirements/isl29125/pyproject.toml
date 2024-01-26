@@ -1,0 +1,53 @@
+# SPDX-FileCopyrightText: Copyright (c) 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "circuitpython-isl29125"
+description = "driver for the isl29125 light sensor"
+version = "0.0.0+auto.0"
+readme = "README.rst"
+authors = [
+    {name = "Jose D. Montoya", email = "isl@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/CircuitPython_isl29125"}
+keywords = [
+    "adafruit",
+    "blinka",
+    "circuitpython",
+    "micropython",
+    "isl29125",
+    "light",
+    "lux",
+    "sensor",
+    "isl29125",
+    "circuitpython",
+    "red",
+    "green",
+    "blue",
+    "color",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+py-modules = ["isl29125"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {optional = {file = ["optional_requirements.txt"]}}

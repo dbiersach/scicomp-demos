@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: 2023 Jose David Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "circuitpython-scales"
+description = "Graphic Scales to represent values in a scale in CircuitPython"
+version = "0.0.0+auto.0"
+readme = "README.rst"
+authors = [
+    {name = "Jose D. Montoya", email = "scales@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/CircuitPython_scales.git"}
+keywords = [
+    "hardware",
+    "micropython",
+    "circuitpython",
+    "graphic",
+    "quantity",
+    "widget",
+    "displayio",
+    "color",
+    "widget",
+    "scale"
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+py-modules = ["CircuitPython_Scales"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {optional = {file = ["optional_requirements.txt"]}}
