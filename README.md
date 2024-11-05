@@ -1,2 +1,2 @@
-# scicomp-demos
-Scientific Computing Demonstrations
+# Scientific Computing Demonstrations
+## Using Thonny, CircuitPython, and Sensors
